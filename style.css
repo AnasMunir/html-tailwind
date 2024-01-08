@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: rgba(65, 79, 107, 0.502);
   /* 2 */
 }
 
@@ -544,8 +544,56 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.left-\[166px\] {
+  left: 166px;
+}
+
+.-bottom-2 {
+  bottom: -0.5rem;
+}
+
+.left-\[183px\] {
+  left: 183px;
+}
+
+.-bottom-1 {
+  bottom: -0.25rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
 }
 
 .-mb-2 {
@@ -562,6 +610,14 @@ video {
 
 .mt-\[250px\] {
   margin-top: 250px;
+}
+
+.-mt-11 {
+  margin-top: -2.75rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
 }
 
 .flex {
@@ -590,8 +646,22 @@ video {
   height: 840px;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.max-h-\[215px\] {
+  max-height: 215px;
+}
+
 .max-h-\[840px\] {
   max-height: 840px;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
@@ -602,8 +672,8 @@ video {
   width: 100vw;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.max-w-\[813px\] {
+  max-width: 813px;
 }
 
 .grid-cols-1 {
@@ -673,17 +743,34 @@ video {
   text-align: center;
 }
 
+.font-body {
+  font-family: Bebas Neue, system-ui, sans-serif;
+}
+
 .font-nav {
   font-family: Lato, system-ui, sans-serif;
 }
 
-.font-body {
-  font-family: Bebas Neue, system-ui, sans-serif;
+.font-section {
+  font-family: Oswald, system-ui, sans-serif;
 }
 
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
+}
+
+.text-\[200px\] {
+  font-size: 200px;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -696,13 +783,20 @@ video {
   line-height: 1rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .uppercase {
@@ -730,6 +824,10 @@ video {
 .text-gray-100 {
   --tw-text-opacity: 1;
   color: rgb(77 77 77 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  color: rgba(65, 79, 107, 0.502);
 }
 
 .text-white {

@@ -6,10 +6,12 @@ module.exports = {
     fontFamily: {
       body: ['Bebas Neue', 'system-ui', 'sans-serif'],
       nav: ['Lato', 'system-ui', 'sans-serif'],
+      section: ['Oswald', 'system-ui', 'sans-serif'],
     },
     colors: {
       gray: {
         100: 'rgb(77, 77, 77)',
+        200: 'rgba(65, 79, 107, 0.502)',
       },
       blue: {
         100: 'rgb(65, 79, 107)',
