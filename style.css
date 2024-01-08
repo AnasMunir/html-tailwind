@@ -580,6 +580,18 @@ video {
   bottom: 5rem;
 }
 
+.bottom-24 {
+  bottom: 6rem;
+}
+
+.left-\[164px\] {
+  left: 164px;
+}
+
+.bottom-28 {
+  bottom: 7rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -618,6 +630,10 @@ video {
 
 .ml-24 {
   margin-left: 6rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .flex {
@@ -674,6 +690,10 @@ video {
 
 .max-w-\[813px\] {
   max-width: 813px;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
 .grid-cols-1 {
@@ -801,6 +821,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.normal-case {
+  text-transform: none;
 }
 
 .italic {
