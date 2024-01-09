@@ -80,7 +80,84 @@
       </div>
     </div>
     <!--  -->
-    <div class="w-full flex justify-center bg-blue-100">
+    <div class="w-full md:hidden">
+      <div class="w-full bg-blue-100">
+        <button
+          class="inline-block p-1 w-full uppercase text-left text-gray-300 active"
+          type="button"
+          role="accordion"
+          aria-selected="true"
+          onclick="showPanel(event, 0)"
+        >
+          Mountain 1
+        </button>
+        <div class="panel" role="panel">
+          <div class="bg-[url('/img/photo-3.png')] bg-cover block p-4 animate-fade">
+            <div class="bg-white bg-opacity-50 w-[352px] h-[229px] px-7 py-6 flex flex-col">
+              <h2 class="uppercase font-bold text-2xl text-left text-blue-100 mb-3">Schedule</h2>
+              <div class="flex flex-col font-extralight font-nav">
+                <div class="flex justify-between">
+                  <p>25 Nov 2016</p>
+                  <p>Vestibulum viverra</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>25 Nov 2016</p>
+                  <p>Vestibulum viverra</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>25 Nov 2016</p>
+                  <p>Vestibulum viverra</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>25 Nov 2016</p>
+                  <p>Vestibulum viverra</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-blue-100">
+        <button
+          class="inline-block p-1 w-full uppercase text-left text-gray-300"
+          data-tabs-target="#mountain-two"
+          type="button"
+          role="accordion"
+          aria-controls="mountain-two"
+          aria-selected="false"
+          onclick="showPanel(event, 1)"
+        >
+          Mountain 2
+        </button>
+        <div class="panel" role="panel">
+          <div class="bg-[url('/img/photo-4.png')] bg-cover block p-4 animate-fade">
+            <div class="bg-white bg-opacity-50 w-[352px] h-[229px] px-7 py-6 flex flex-col">
+              <h2 class="uppercase font-bold text-2xl text-left text-blue-100 mb-3">Schedule</h2>
+              <div class="flex flex-col font-extralight font-nav">
+                <div class="flex justify-between">
+                  <p>25 Nov 2016</p>
+                  <p>Vestibulum viverra</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>25 Nov 2016</p>
+                  <p>Vestibulum viverra</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>25 Nov 2016</p>
+                  <p>Vestibulum viverra</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>25 Nov 2016</p>
+                  <p>Vestibulum viverra</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="hidden md:flex w-full justify-center bg-blue-100">
       <div class="max-w-[880px] w-[880px] font-section">
         <div>
           <ul
@@ -120,51 +197,59 @@
       </div>
     </div>
 
-    <div class="w-screen h-[825px] flex justify-center text-center bg-[url('/img/photo-3.png')] bg-cover">
-      <div class="max-w-[880px] w-[880px] p-11 font-section" id="default-tab-content">
-        <div class="block p-4 animate-fade" id="mountain-one-tab" role="tabpanel" aria-labelledby="mountain-one-tab">
-          <div class="bg-white bg-opacity-50 w-[352px] h-[229px] px-7 py-6 flex flex-col">
-            <h2 class="uppercase font-bold text-2xl text-left text-blue-100 mb-3">Schedule</h2>
-            <div class="flex flex-col font-extralight font-nav">
-              <div class="flex justify-between">
-                <p>25 Nov 2016</p>
-                <p>Vestibulum viverra</p>
-              </div>
-              <div class="flex justify-between">
-                <p>25 Nov 2016</p>
-                <p>Vestibulum viverra</p>
-              </div>
-              <div class="flex justify-between">
-                <p>25 Nov 2016</p>
-                <p>Vestibulum viverra</p>
-              </div>
-              <div class="flex justify-between">
-                <p>25 Nov 2016</p>
-                <p>Vestibulum viverra</p>
-              </div>
+    <div class="hidden md:block h-[825px] text-center w-screen font-section">
+      <div
+        class="block h-full bg-[url('/img/photo-3.png')] bg-cover p-16"
+        id="mountain-one-tab"
+        role="tabpanel"
+        aria-labelledby="mountain-one-tab"
+      >
+        <div class="bg-white bg-opacity-50 w-[352px] h-[229px] px-7 py-6 flex flex-col animate-fade">
+          <h2 class="uppercase font-bold text-2xl text-left text-blue-100 mb-3">Schedule</h2>
+          <div class="flex flex-col font-extralight font-nav">
+            <div class="flex justify-between">
+              <p>25 Nov 2016</p>
+              <p>Vestibulum viverra</p>
+            </div>
+            <div class="flex justify-between">
+              <p>25 Nov 2016</p>
+              <p>Vestibulum viverra</p>
+            </div>
+            <div class="flex justify-between">
+              <p>25 Nov 2016</p>
+              <p>Vestibulum viverra</p>
+            </div>
+            <div class="flex justify-between">
+              <p>25 Nov 2016</p>
+              <p>Vestibulum viverra</p>
             </div>
           </div>
         </div>
-        <div class="hidden p-4 animate-fade" id="mountain-two-tab" role="tabpanel" aria-labelledby="mountain-two-tab">
-          <div class="bg-white bg-opacity-50 w-[352px] h-[229px] px-7 py-6 flex flex-col">
-            <h2 class="uppercase font-bold text-2xl text-left text-blue-100 mb-3">Schedule</h2>
-            <div class="flex flex-col font-extralight font-nav">
-              <div class="flex justify-between">
-                <p>25 Nov 2016</p>
-                <p>Vestibulum viverra</p>
-              </div>
-              <div class="flex justify-between">
-                <p>25 Nov 2016</p>
-                <p>Vestibulum viverra</p>
-              </div>
-              <div class="flex justify-between">
-                <p>25 Nov 2016</p>
-                <p>Vestibulum viverra</p>
-              </div>
-              <div class="flex justify-between">
-                <p>25 Nov 2016</p>
-                <p>Vestibulum viverra</p>
-              </div>
+      </div>
+      <div
+        class="hidden h-full bg-[url('/img/photo-4.png')] bg-cover p-16"
+        id="mountain-two-tab"
+        role="tabpanel"
+        aria-labelledby="mountain-two-tab"
+      >
+        <div class="bg-white bg-opacity-50 w-[352px] h-[229px] px-7 py-6 flex flex-col animate-fade">
+          <h2 class="uppercase font-bold text-2xl text-left text-blue-100 mb-3">Schedule</h2>
+          <div class="flex flex-col font-extralight font-nav">
+            <div class="flex justify-between">
+              <p>25 Oct 2016</p>
+              <p>Vestibulum viverra</p>
+            </div>
+            <div class="flex justify-between">
+              <p>25 Oct 2016</p>
+              <p>Vestibulum viverra</p>
+            </div>
+            <div class="flex justify-between">
+              <p>25 Oct 2016</p>
+              <p>Vestibulum viverra</p>
+            </div>
+            <div class="flex justify-between">
+              <p>25 Oct 2016</p>
+              <p>Vestibulum viverra</p>
             </div>
           </div>
         </div>
@@ -197,6 +282,20 @@
         tabPanel[index].className = tabPanel[index].className.replace('hidden', 'block');
 
         event.currentTarget.className += ' active';
+      }
+      function showPanel(event, index) {
+        const accordions = document.querySelectorAll('[role="accordion"]');
+        const panels = document.querySelectorAll('[role="panel"]');
+
+        for (let i = 0; i < accordions.length; i++) {
+          accordions[i].className = accordions[i].className.replace(' active', '');
+        }
+
+        for (let i = 0; i < panels.length; i++) {
+          panels[i].style.maxHeight = null;
+        }
+        panels[index].style.maxHeight = panels[index].scrollHeight + 'px';
+        event.currentTarget.classList.toggle('active');
       }
     </script>
   </body>
