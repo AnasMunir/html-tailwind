@@ -24,55 +24,132 @@
       </div>
     </div>
     <!--  -->
-    <div class="flex w-full justify-around items-center py-3">
-      <div class="flex">
-        <img src="./img/logo.png" alt="logo" class="size-10" />
-        <div class="flex flex-col justify-center text-left uppercase text-xl leading-tight ml-2">
-          <h1 class="-mb-2 text-gray-100">LOSANGELES</h1>
-          <h1 class="text-blue-100">MOUNTAINS</h1>
+    <!-- <div class="flex w-full justify-around items-center py-3"> -->
+    <div class="flex w-full justify-center items-center py-3">
+      <div class="flex justify-between items-center max-w-[880px] w-[880px]">
+        <div class="flex">
+          <img src="./img/logo.png" alt="logo" class="size-10" />
+          <div class="flex flex-col justify-center text-left uppercase text-xl leading-tight ml-2">
+            <h1 class="-mb-2 text-gray-100">LOSANGELES</h1>
+            <h1 class="text-blue-100">MOUNTAINS</h1>
+          </div>
         </div>
+        <ol class="flex text-xs uppercase underline italic text-blue-100 font-nav font-bold">
+          <li><p>01. history</p></li>
+          <li class="ml-7"><p>02. team</p></li>
+        </ol>
       </div>
-      <ol class="flex text-xs uppercase underline italic text-blue-100 font-nav font-bold">
-        <li><p>01. history</p></li>
-        <li class="ml-7"><p>02. team</p></li>
-      </ol>
     </div>
     <!--  -->
 
     <div class="w-screen h-[825px] flex justify-center text-center bg-[url('/img/photo-2.png')] bg-cover">
-      <div class="grid grid-rows-2 grid-cols-1 max-w-[813px] h-fit font-section">
-        <div class="row-start-1 w-fit h-fit">
-          <h2 class="text-[200px] relative font-bold text-gray-200">
-            01.
-            <span class="absolute w-fit h-fit left-[183px] bottom-20">
-              <h2 class="text-[50px] uppercase text-blue-100">history</h2>
-            </span>
-          </h2>
-        </div>
-        <div class="row-start-2 -mt-11 ml-24">
-          <p class="text-left font-extralight font-nav">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque commodi id, distinctio dolorum
-            officiis quae magnam quaerat laudantium quo possimus maxime blanditiis facilis tempore unde nostrum
-            necessitatibus deleniti odit?
-          </p>
+      <div class="max-w-[880px]">
+        <div class="grid grid-rows-2 grid-cols-1 max-w-[813px] h-fit font-section">
+          <div class="row-start-1 w-fit h-fit">
+            <h2 class="text-[200px] relative font-bold text-gray-200">
+              01.
+              <span class="absolute w-fit h-fit left-[183px] bottom-20">
+                <h2 class="text-[50px] uppercase text-blue-100">history</h2>
+              </span>
+            </h2>
+          </div>
+          <div class="row-start-2 -mt-11 ml-24">
+            <p class="text-left font-extralight font-nav">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque commodi id, distinctio dolorum
+              officiis quae magnam quaerat laudantium quo possimus maxime blanditiis facilis tempore unde nostrum
+              necessitatibus deleniti odit?
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <!--  -->
-    <div class="flex w-full justify-center items-center">
-      <h2 class="text-[200px] relative font-bold text-gray-200">
-        02.
-        <span class="absolute w-fit h-fit left-[164px] bottom-28">
-          <h2 class="text-[50px] uppercase text-blue-100">climb</h2>
-        </span>
-      </h2>
-      <p class="max-w-[600px] ml-20">
-        Cras scelerisque id quam sed dignissim Pellentesque urna nunc,Totam, doloremque commodi id, distinctio dolorum
-        officiis quae magnam quaerat laudantium quo possimus
-      </p>
+    <div class="flex w-full justify-center">
+      <div class="flex items-center max-w-[880px]">
+        <h2 class="text-[200px] relative font-bold text-gray-200">
+          02.
+          <span class="absolute w-fit h-fit left-[164px] bottom-28">
+            <h2 class="text-[50px] uppercase text-blue-100">climb</h2>
+          </span>
+        </h2>
+
+        <p class="max-w-[600px] ml-20">
+          Cras scelerisque id quam sed dignissim Pellentesque urna nunc,Totam, doloremque commodi id, distinctio dolorum
+          officiis quae magnam quaerat laudantium quo possimus
+        </p>
+      </div>
     </div>
     <!--  -->
-    <div class="w-screen h-[825px] flex justify-center text-center bg-[url('/img/photo-3.png')] bg-cover"></div>
+    <div class="w-full flex justify-center bg-blue-100">
+      <div class="max-w-[880px] w-[880px] font-section">
+        <div>
+          <ul
+            class="flex flex-wrap text-md font-bold text-center"
+            id="default-tab"
+            data-tabs-toggle="#default-tab-content"
+            role="tablist"
+          >
+            <li class="px-3" role="presentation">
+              <button
+                class="inline-block p-1 w-24 uppercase text-gray-300 active"
+                data-tabs-target="#mountain-one"
+                type="button"
+                role="tab"
+                aria-controls="mountain-one"
+                aria-selected="true"
+                onclick="showTab(event, 0)"
+              >
+                Mountain 1
+              </button>
+            </li>
+            <li class="px-3" role="presentation">
+              <button
+                class="inline-block p-1 w-24 uppercase text-gray-300"
+                data-tabs-target="#mountain-two"
+                type="button"
+                role="tab"
+                aria-controls="mountain-two"
+                aria-selected="false"
+                onclick="showTab(event, 1)"
+              >
+                Mountain 2
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-screen h-[825px] flex justify-center text-center bg-[url('/img/photo-3.png')] bg-cover">
+      <div id="default-tab-content">
+        <div
+          class="block p-4 rounded-lg bg-gray-50 dark:bg-gray-800 animate-fade"
+          id="mountain-one-tab"
+          role="tabpanel"
+          aria-labelledby="mountain-one-tab"
+        >
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            First CONTENT
+            <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>.
+            Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes
+            to control the content visibility and styling.
+          </p>
+        </div>
+        <div
+          class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800 animate-fade"
+          id="mountain-two-tab"
+          role="tabpanel"
+          aria-labelledby="mountain-two-tab"
+        >
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Second CONTENT
+            <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>.
+            Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes
+            to control the content visibility and styling.
+          </p>
+        </div>
+      </div>
+    </div>
     <!--  -->
     <footer class="flex w-full justify-around items-center py-3 bg-blue-100">
       <div class="flex">
@@ -85,5 +162,22 @@
       <p class="text-sm uppercase italic text-blue-200 font-bold">Copyright 2024. All rights reserved.</p>
     </footer>
     <!--  -->
+    <script>
+      function showTab(event, index) {
+        const tabPanel = document.querySelectorAll('[role="tabpanel"]');
+        const tabs = document.querySelectorAll('[role="tab"]');
+
+        for (let i = 0; i < tabPanel.length; i++) {
+          tabPanel[i].className = tabPanel[i].className.replace('block', 'hidden');
+        }
+        for (i = 0; i < tabs.length; i++) {
+          tabs[i].className = tabs[i].className.replace(' active', '');
+        }
+
+        tabPanel[index].className = tabPanel[index].className.replace('hidden', 'block');
+
+        event.currentTarget.className += ' active';
+      }
+    </script>
   </body>
 </html>

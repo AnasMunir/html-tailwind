@@ -3,5 +3,7 @@
 @import 'tailwindcss/utilities';
 
 .active {
-  background-color: #ccc;
+  background: rgb(176, 180, 190);
+  color: rgb(65, 79, 107);
+  text-decoration: underline;
 }
