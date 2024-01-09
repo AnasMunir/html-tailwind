@@ -2,7 +2,17 @@
 module.exports = {
   content: ['./*.html'],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        fade: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+      animation: {
+        fade: 'fade 1s',
+      },
+    },
     fontFamily: {
       body: ['Bebas Neue', 'system-ui', 'sans-serif'],
       nav: ['Lato', 'system-ui', 'sans-serif'],
