@@ -992,8 +992,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .active {
