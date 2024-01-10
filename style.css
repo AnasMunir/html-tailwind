@@ -642,8 +642,8 @@ video {
   height: 2rem;
 }
 
-.h-28 {
-  height: 7rem;
+.h-\[135px\] {
+  height: 135px;
 }
 
 .h-\[229px\] {
@@ -675,8 +675,8 @@ video {
   width: 6rem;
 }
 
-.w-32 {
-  width: 8rem;
+.w-\[220px\] {
+  width: 220px;
 }
 
 .w-\[23\.33333\%\] {
@@ -734,6 +734,10 @@ video {
   animation: fade 1s;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -766,8 +770,8 @@ video {
   justify-content: space-around;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .overflow-hidden {
@@ -818,6 +822,10 @@ video {
 
 .p-16 {
   padding: 4rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
@@ -976,12 +984,16 @@ video {
   transition-duration: 150ms;
 }
 
-.delay-1000 {
-  transition-delay: 1000ms;
+.delay-500 {
+  transition-delay: 500ms;
 }
 
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .active {
@@ -995,132 +1007,6 @@ video {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Slideshow container */
-
-.slideshow-container {
-  /* max-width: 1000px; */
-  position: relative;
-  margin: auto;
-  width: 220px;
-  height: 135px;
-  /* display: flex;
-  justify-content: center; */
-}
-
-/* Make the images invisible by default */
-
-.Containers {
-  display: none;
-  width: 220px;
-  height: 135px;
-}
-
-/* forward & Back buttons */
-
-.Back,
-.forward {
-  cursor: pointer;
-  position: absolute;
-  top: 48%;
-  width: auto;
-  margin-top: -23px;
-  padding: 17px;
-  color: grey;
-  font-weight: bold;
-  font-size: 19px;
-  transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-
-/* Place the "forward button" to the right */
-
-.forward {
-  right: 0;
-  border-radius: 4px 0 0 4px;
-}
-
-.Back {
-  opacity: 1;
-  color: black;
-  background: white;
-  left: 0;
-}
-
-/*when the user hovers,add a black background with some little opacity */
-
-.Back:hover,
-.forward:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption Info */
-
-.info {
-  color: #e3e3e3;
-  font-size: 16px;
-  padding: 10px 14px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Content */
-
-.info {
-  color: #f2f2f3;
-  font-size: 14px;
-  padding: 10px 14px;
-  position: absolute;
-  top: 0;
-}
-
-/* The circles or bullets indicators */
-
-.dots {
-  cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 0 3px;
-  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
-  opacity: 0.3;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
-}
-
-.enable,
-.dots:hover {
-  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
-  opacity: 1;
-}
-
-/* Faint animation */
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.4s;
-  animation-name: fade;
-  animation-duration: 1.4s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.5;
-  }
-
-  to {
-    opacity: 2;
-  }
 }
 
 .map > button {
@@ -1160,13 +1046,5 @@ video {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-56 {
-    height: 14rem;
-  }
-
-  .md\:w-60 {
-    width: 15rem;
   }
 }

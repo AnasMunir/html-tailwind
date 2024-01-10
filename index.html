@@ -11,21 +11,21 @@
     <title>Coalition Tech</title>
   </head>
   <body class="bg-white font-body">
-    <div class="w-full max-h-[840px] h-[840px] bg-[url('/img/photo-1.png')] bg-cover">
+    <header class="w-full max-h-[840px] h-[840px] bg-[url('/img/photo-1.png')] bg-cover">
       <div class="flex w-full justify-around pt-3">
         <img src="./img/logo.png" alt="logo" class="size-8" />
         <ol class="flex text-xs uppercase underline italic text-white font-nav font-bold">
-          <li><p>01. history</p></li>
-          <li class="ml-7"><p>02. team</p></li>
+          <li><a class="cursor-pointer" href="#history">01. history</a></li>
+          <li class="ml-7"><a class="cursor-pointer" href="#team">02. team</a></li>
         </ol>
       </div>
       <div class="flex-col justify-center text-center text-8xl uppercase mt-[250px] z-10">
         <h1 class="-mb-2 text-gray-100">LOSANGELES</h1>
         <h1 class="text-blue-100">MOUNTAINS</h1>
       </div>
-    </div>
+    </header>
     <!--  -->
-    <div class="flex w-full justify-center items-center py-3">
+    <nav class="flex w-full justify-center items-center p-3">
       <div class="flex justify-between items-center max-w-[880px] w-[880px]">
         <div class="flex">
           <img src="./img/logo.png" alt="logo" class="size-10" />
@@ -35,14 +35,19 @@
           </div>
         </div>
         <ol class="flex text-xs uppercase underline italic text-blue-100 font-nav font-bold">
-          <li><p>01. history</p></li>
-          <li class="ml-7"><p>02. team</p></li>
+          <li>
+            <a class="cursor-pointer" href="#history">01. history</a>
+          </li>
+          <li class="ml-7">
+            <a class="cursor-pointer" href="#team">02. team</a>
+          </li>
         </ol>
       </div>
-    </div>
+    </nav>
     <!--  -->
 
-    <div
+    <section
+      id="history"
       class="w-full h-[825px] flex flex-col items-center justify-center text-center bg-[url('/img/photo-2.png')] bg-cover relative"
     >
       <div class="grid grid-rows-2 grid-cols-1 max-w-[813px] h-fit font-section">
@@ -63,44 +68,46 @@
         </div>
       </div>
       <!--  -->
-      <div class="flex flex-col justify-center items-center h-full">
-        <div class="flex gap-4 overflow-hidden w-[23.33333%]">
-          <div class="flex gap-4 transition-all ease-in delay-1000 inner">
-            <div class="block rounded-lg shadow-lg w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-1.png" />
-            </div>
-            <div class="block rounded-lg shadow-sm w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-2.png" />
-            </div>
-            <div class="block rounded-lg shadow-sm w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-3.png" />
-            </div>
-            <div class="block rounded-lg shadow-sm w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-4.png" />
-            </div>
-            <div class="block rounded-lg shadow-lg w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-1.png" />
-            </div>
-            <div class="block rounded-lg shadow-sm w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-1.png" />
-            </div>
-            <div class="block rounded-lg shadow-sm w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-1.png" />
-            </div>
-            <div class="block rounded-lg shadow-sm w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-1.png" />
-            </div>
-            <div class="block rounded-lg shadow-lg w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-2.png" />
-            </div>
-            <div class="block rounded-lg shadow-sm w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-2.png" />
-            </div>
-            <div class="block rounded-lg shadow-sm w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-2.png" />
-            </div>
-            <div class="block rounded-lg shadow-sm w-32 md:w-60">
-              <img class="h-28 md:h-56" src="./img/photo-2.png" />
+      <div>
+        <div class="flex flex-col justify-center items-center h-full bg-blue-100 bg-opacity-50">
+          <div class="flex gap-3 overflow-hidden w-[23.33333%]">
+            <div class="flex gap-3 transition-all ease-in delay-500 inner">
+              <div class="block rounded-lg shadow-lg w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-1.png" />
+              </div>
+              <div class="block rounded-lg shadow-sm w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-2.png" />
+              </div>
+              <div class="block rounded-lg shadow-sm w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-3.png" />
+              </div>
+              <div class="block rounded-lg shadow-sm w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-4.png" />
+              </div>
+              <div class="block rounded-lg shadow-lg w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-1.png" />
+              </div>
+              <div class="block rounded-lg shadow-sm w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-1.png" />
+              </div>
+              <div class="block rounded-lg shadow-sm w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-1.png" />
+              </div>
+              <div class="block rounded-lg shadow-sm w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-1.png" />
+              </div>
+              <div class="block rounded-lg shadow-lg w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-2.png" />
+              </div>
+              <div class="block rounded-lg shadow-sm w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-2.png" />
+              </div>
+              <div class="block rounded-lg shadow-sm w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-2.png" />
+              </div>
+              <div class="block rounded-lg shadow-sm w-[220px] h-[135px]">
+                <img class="w-full" src="./img/photo-2.png" />
+              </div>
             </div>
           </div>
         </div>
@@ -111,9 +118,9 @@
         <button class="third"></button>
       </div>
       <!--  -->
-    </div>
+    </section>
     <!--  -->
-    <div class="flex w-full justify-center">
+    <section id="team" class="flex w-full justify-center">
       <div class="flex items-center max-w-[880px]">
         <h2 class="text-[200px] relative font-bold text-gray-200">
           02.
@@ -127,9 +134,9 @@
           officiis quae magnam quaerat laudantium quo possimus
         </p>
       </div>
-    </div>
+    </section>
     <!--  -->
-    <div class="w-full md:hidden">
+    <section class="w-full md:hidden">
       <div class="w-full bg-blue-100">
         <button
           class="inline-block p-1 w-full uppercase text-left text-gray-300 active"
@@ -204,9 +211,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--  -->
-    <div class="hidden md:flex w-full justify-center bg-blue-100">
+    <section class="hidden md:flex w-full justify-center bg-blue-100">
       <div class="max-w-[880px] w-[880px] font-section">
         <div>
           <ul
@@ -244,9 +251,9 @@
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="hidden md:block h-[825px] text-center w-screen font-section">
+    <section class="hidden md:block h-[825px] text-center w-screen font-section">
       <div
         class="block h-full bg-[url('/img/photo-3.png')] bg-cover p-16"
         id="mountain-one-tab"
@@ -303,7 +310,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--  -->
     <footer class="flex w-full justify-around items-center py-3 bg-blue-100">
       <div class="flex">
