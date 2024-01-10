@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel.scss" />
     <title>Coalition Tech</title>
   </head>
   <body class="bg-white font-body">
@@ -24,7 +25,6 @@
       </div>
     </div>
     <!--  -->
-    <!-- <div class="flex w-full justify-around items-center py-3"> -->
     <div class="flex w-full justify-center items-center py-3">
       <div class="flex justify-between items-center max-w-[880px] w-[880px]">
         <div class="flex">
@@ -42,26 +42,75 @@
     </div>
     <!--  -->
 
-    <div class="w-screen h-[825px] flex justify-center text-center bg-[url('/img/photo-2.png')] bg-cover">
-      <div class="max-w-[880px]">
-        <div class="grid grid-rows-2 grid-cols-1 max-w-[813px] h-fit font-section">
-          <div class="row-start-1 w-fit h-fit">
-            <h2 class="text-[200px] relative font-bold text-gray-200">
-              01.
-              <span class="absolute w-fit h-fit left-[183px] bottom-20">
-                <h2 class="text-[50px] uppercase text-blue-100">history</h2>
-              </span>
-            </h2>
-          </div>
-          <div class="row-start-2 -mt-11 ml-24">
-            <p class="text-left font-extralight font-nav">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque commodi id, distinctio dolorum
-              officiis quae magnam quaerat laudantium quo possimus maxime blanditiis facilis tempore unde nostrum
-              necessitatibus deleniti odit?
-            </p>
+    <div
+      class="w-full h-[825px] flex flex-col items-center justify-center text-center bg-[url('/img/photo-2.png')] bg-cover relative"
+    >
+      <div class="grid grid-rows-2 grid-cols-1 max-w-[813px] h-fit font-section">
+        <div class="row-start-1 w-fit h-fit">
+          <h2 class="text-[200px] relative font-bold text-gray-200">
+            01.
+            <span class="absolute w-fit h-fit left-[183px] bottom-20">
+              <h2 class="text-[50px] uppercase text-blue-100">history</h2>
+            </span>
+          </h2>
+        </div>
+        <div class="row-start-2 -mt-11 ml-24">
+          <p class="text-left font-extralight font-nav">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque commodi id, distinctio dolorum
+            officiis quae magnam quaerat laudantium quo possimus maxime blanditiis facilis tempore unde nostrum
+            necessitatibus deleniti odit?
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex flex-col justify-center items-center h-full">
+        <div class="flex gap-4 overflow-hidden w-[23.33333%]">
+          <div class="flex gap-4 transition-all ease-in delay-1000 inner">
+            <div class="block rounded-lg shadow-lg w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-1.png" />
+            </div>
+            <div class="block rounded-lg shadow-sm w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-2.png" />
+            </div>
+            <div class="block rounded-lg shadow-sm w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-3.png" />
+            </div>
+            <div class="block rounded-lg shadow-sm w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-4.png" />
+            </div>
+            <div class="block rounded-lg shadow-lg w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-1.png" />
+            </div>
+            <div class="block rounded-lg shadow-sm w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-1.png" />
+            </div>
+            <div class="block rounded-lg shadow-sm w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-1.png" />
+            </div>
+            <div class="block rounded-lg shadow-sm w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-1.png" />
+            </div>
+            <div class="block rounded-lg shadow-lg w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-2.png" />
+            </div>
+            <div class="block rounded-lg shadow-sm w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-2.png" />
+            </div>
+            <div class="block rounded-lg shadow-sm w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-2.png" />
+            </div>
+            <div class="block rounded-lg shadow-sm w-32 md:w-60">
+              <img class="h-28 md:h-56" src="./img/photo-2.png" />
+            </div>
           </div>
         </div>
       </div>
+      <div class="map">
+        <button class="active first"></button>
+        <button class="second"></button>
+        <button class="third"></button>
+      </div>
+      <!--  -->
     </div>
     <!--  -->
     <div class="flex w-full justify-center">
@@ -266,7 +315,7 @@
       </div>
       <p class="text-sm uppercase italic text-blue-200 font-bold">Copyright 2024. All rights reserved.</p>
     </footer>
-    <!--  -->
+
     <script>
       function showTab(event, index) {
         const tabPanel = document.querySelectorAll('[role="tabpanel"]');
@@ -297,6 +346,27 @@
         panels[index].style.maxHeight = panels[index].scrollHeight + 'px';
         event.currentTarget.classList.toggle('active');
       }
+
+      const buttonsWrapper = document.querySelector('.map');
+      const slides = document.querySelector('.inner');
+
+      buttonsWrapper.addEventListener('click', (e) => {
+        console.log('e.target.nodeName', e.target.nodeName);
+        console.log('buttonsWrapper.children', buttonsWrapper.children);
+        if (e.target.nodeName === 'BUTTON') {
+          Array.from(buttonsWrapper.children).forEach((item) => item.classList.remove('active'));
+          if (e.target.classList.contains('first')) {
+            slides.style.transform = 'translateX(-0%)';
+            e.target.classList.add('active');
+          } else if (e.target.classList.contains('second')) {
+            slides.style.transform = 'translateX(-33.33333333333333%)';
+            e.target.classList.add('active');
+          } else if (e.target.classList.contains('third')) {
+            slides.style.transform = 'translateX(-66.6666666667%)';
+            e.target.classList.add('active');
+          }
+        }
+      });
     </script>
   </body>
 </html>
